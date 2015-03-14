@@ -1,3 +1,0 @@
-Créer un site web pour les projets tuteurés :
-- HTML5
-- CSS3

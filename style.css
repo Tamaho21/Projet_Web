@@ -1,67 +1,249 @@
-html
+html 
 {
-font-family : Georgia, "Times New Roman", serif;
-margin: auto;
+	font-family: "Lucida Sans Unicode", Georgia, "Times New Roman", serif;
+	font-size: 12pt;
+	margin: auto;
+	text-align: justify;
 }
 
-body
+body 
 {
-margin:0;
-padding:0;
+	margin: 0;
+	padding: 0;
+	background: #fafafa;
+}
+
+/*Authentification*/
+
+aside  
+{
+	float:left;
+	width:300px;
+	background-color:#ffffff;
+	margin-top: 30px;
+	margin-left: 50px;
+	margin-right: 50px;
+	min-height: 200px;
+}
+
+form
+{
+	padding:15px;
+}
+
+.case
+{
+	color: #e75112;
+	height: 35px;
+	width: 100%;
+	border:none;
+	border-bottom: solid 1px #e75112;
+	padding: 10px 0;
+	display:block;
+	outline: none;
+}
+
+.connexion
+{
+	height: 35px;
+	width: 100%;
+	border:none;
+	background: #e75112;
+	color: #ffffff;
+	display:block;
+}
+
+form p {
+	text-align: center;
+	color: #e75112;
+}
+
+/*SECTION*/
+
+section {
+	padding: 5px 0;
+	margin-left:400px;
+	margin-right: 50px;
+	display: block;
+	background-color:#fafafa;
+}
+
+article {
+	margin: 25px 15px;
+	background-color:#ffffff;
+	padding: 25px;
+	border-left: solid 5px #e75112;
+}
+
+.entete {
+	font-size: 18pt;
+	margin: 0px;
+}
+	
+footer
+{
+	background-color: #403e3f; /*nav grey banner*/
+	padding: 1px;
+	text-align: center;
+	font-size: 11px;
+	color: #ffffff;
+}
+
+ul li {
+	list-style: none;
+}
+
+/* nav */
+nav 
+{
+	background-color: #403e3f; /*nav grey banner*/
+	font-variant : small-caps;
+	position: relative;
+}
+nav ul 
+{
+	margin: 0;
+	padding: 15px;
+}
+nav li 
+{
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+}
+nav a 
+{
+	color: #ffffff; /*nav white item label*/
+	line-height: 100%;
+	padding: 15px 15px;
+	text-decoration: none;
+}
+nav a:hover 
+{
+	color: #ffffff; /*nav white item label*/
+	background: #e75112; /*nav orange item block*/
+	padding: 15px 15px;
+	transition: background 0.5s;
+}
+nav .selected a 
+{
+	color: #ffffff; /*nav selected white item label*/
+	background: #e75112; /*nav selected orange item block*/
+}
+.nav-title {
+	padding-right: 100px;
+	color: #ffffff;
 }
 
 
-nav
+
+/* responsive menu */
+@media screen and (max-width : 760px)
 {
-text-align : center;
-background-color: #403e3f;
-padding: 10px;
+
+	/* Authentification*/
+	aside  
+	{
+		display: block;
+		width: 100%;
+		margin-left: 0;
+		min-height: 200px;
+		background-color: #ffffff;
+		margin-bottom: 25px;
+	}
+
+	.case
+	{
+		color: #e75112;
+		width: 85px;
+		border: none;
+		border-bottom: solid 1px #e75112;
+		padding: 10px 5px;
+		display: inline;
+		outline: none;
+	}
+
+	.connexion
+	{
+		width: 100px;
+		border: none;
+		background: #e75112;
+		color: #ffffff;
+		display: inline;
+	}
+
+	form p {
+		color: #e75112;
+		display:block;
+		padding-bottom: 15px;
+	}
+
+	section {
+		display: block;
+		background-color:#fafafa;
+		padding: 5px 0;
+		margin-left:10px;
+		margin-right: 10px;
+		margin-top: 125px;
+	}
+
+	article {
+		border-left: solid 5px #e75112;
+	}
+
+	nav 
+	{
+		background: #ffffff;
+		font-variant : small-caps;
+		height: 50px; /*to display correclty the content*/
+		position: relative;
+	}
+	nav ul 
+	{
+		background: #403e3f; /*nav grey banner*/
+		padding: 0px 0;
+		position: absolute;
+		width: 100%;
+	}
+	nav li 
+	{
+		background-color: #403e3f; /*nav grey banner*/
+		display: none; /* hide all <li> items */
+		margin: 0;
+	}
+	nav .selected 
+	{
+		display: block; /* show only selected <li> item */
+	}
+	nav a 
+	{
+		color: #ffffff;
+		display: block;
+		line-height: 100%;
+		text-align: left;
+		
+	}
+	nav .selected a 
+	{
+		background: #e75112; 
+		color: #ffffff; /*nav selected white item*/
+	}
+
+	/* on nav hover */
+	nav a:hover 
+	{
+		background: #e75112;
+		transition: background 0.25s;
+		
+	}
+	nav ul:hover 
+	{
+		color: #ffffff;	
+	}
+	nav ul:hover li 
+	{
+		color: #ffffff;
+		display: block;
+	}
+
 }
-
-ul, li
-{
-list-style-type: none;
-display: inline;
-}
-
-a
-{
-color: #ffffff;
-text-decoration: none;
-font-variant: small-caps;
-padding:10px;
-
-}
-
-a:hover 
-{
-color: #ffffff;
-background: #fdaf17;
-transition: background 1s;
-padding:10px;
-}
-
-
-.select
-{
-font-variant: small-caps;
-display:inline;
-color: #ffffff;
-background: #fdaf17;
-padding:10px;
-}
-
-.content
-{
-padding : 10px 100px;
-}
-
-section
-{
-text-align: justify;
-text-justify: inter-word;
-}
-
-
-
-
