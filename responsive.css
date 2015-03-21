@@ -1,0 +1,120 @@
+/***************************** responsive menu ************************************/
+@media screen and (max-width : 760px)
+{
+
+	/* Authentification*/
+	
+	aside  
+	{
+		display: block;
+		width: 100%;
+		margin: 0;
+		background-color: #ffffff;
+	}
+
+	.id, .password
+	{
+		color: #e75112;
+		width: 100px;
+		border: none;
+		border-bottom: groove 1px #e75112;
+		padding: 0 5px;
+		display: inline;
+		outline: none;
+	}
+	
+	.connection
+	{
+		width: 100px;
+		border: none;
+		background: #e75112;
+		color: #ffffff;
+		display: inline;
+		outline: none;
+	}
+
+	form p 
+	{
+		color: #403e3f;
+		display:block;
+		margin : 0;
+		padding-bottom: 30px;
+	}
+
+	section 
+	{
+		display: block;
+		background-color:#ebebeb;
+		padding: 5px 0;
+		margin-left:10px;
+		margin-right: 10px;
+		margin-top: 125px;
+		padding-top: 115px;
+	}
+
+	article 
+	{
+		border-left: groove 5px #e75112;
+	}
+
+	nav 
+	{
+		background: #ffffff;
+		font-variant : small-caps;
+		height: 50px; /*to display correclty the content*/
+		position: relative;
+	}
+	
+	nav ul 
+	{
+		background: #403e3f; /*nav grey banner*/
+		padding: 0px 0;
+		position: absolute;
+		width: 100%;
+	}
+	
+	nav li 
+	{
+		background-color: #403e3f; /*nav grey banner*/
+		display: none; /* hide all <li> items */
+		margin: 0;
+	}
+	
+	nav .selected 
+	{
+		display: block; /* show only selected <li> item */
+	}
+	
+	nav a 
+	{
+		color: #ffffff;
+		display: block;
+		line-height: 100%;
+		text-align: left;
+		
+	}
+	
+	nav .selected a 
+	{
+		background: #e75112; 
+		color: #ffffff; /*nav selected white item*/
+	}
+
+	/* on nav hover */
+	nav a:hover 
+	{
+		background: #e75112;
+		transition: background 0.25s;
+		
+	}
+	nav ul:hover 
+	{
+		color: #ffffff;	
+	}
+	nav ul:hover li 
+	{
+		color: #ffffff;
+		display: block;
+	}
+	
+}
