@@ -29,6 +29,11 @@ border-left: solid 4px #dddddd;
 padding-left: 10px;
 }
 
+h1
+{
+font-size: 12pt;
+}
+
 a
 {
 color: #000000;
@@ -121,12 +126,11 @@ padding-right: 1px;
 
 /*SECTION*/
 
-section 
+.content
 {
 display: block;
 margin: 55px 75px 0px 75px;
 min-height: 100%;
-position: inline-block;
 padding-bottom: 50px; /*taille du footer identique à celui du footer*/
 }
 
@@ -153,13 +157,13 @@ width: 200px;
 
 #space
 {
-margin-bottom: 50px;
+margin-bottom: 100px;
 }
 
 .projet
 {
 border-left: solid 4px #d0001f;
-margin: 50px 0px -35px 275px;
+margin: 50px 0px -35px 325px;
 padding: 5px 5px 5px 15px;
 border-left: solid 4px #cccccc;
 }
