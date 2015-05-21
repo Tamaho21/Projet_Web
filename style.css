@@ -9,7 +9,7 @@ padding: 0;
 
 body
 {
-background-color: #ebebeb;
+background-color: #f0f0f0;
 font-family: "Lucida Sans Unicode", Georgia, "Times New Roman", Serif;
 font-size: 11pt;
 height: 100%;
@@ -38,6 +38,11 @@ a
 {
 color: #000000;
 text-decoration: underline;
+}
+
+h1 a
+{
+text-decoration: none;
 }
 
 a:hover
@@ -81,7 +86,7 @@ height: 35px;
 left: 400px;
 padding-bottom: 5px;
 position: absolute;
-width: 500px; /*important ne pas supprimer */
+width: 500px;
 }
 
 nav li
@@ -131,7 +136,7 @@ padding-right: 1px;
 display: block;
 margin: 55px 75px 0px 75px;
 min-height: 100%;
-padding-bottom: 50px; /*taille du footer identique à celui du footer*/
+padding-bottom: 50px;
 }
 
 article 
@@ -163,7 +168,7 @@ margin-bottom: 100px;
 .projet
 {
 border-left: solid 4px #d0001f;
-margin: 50px 0px -35px 325px;
+margin: 50px 75px -35px 350px;
 padding: 5px 5px 5px 15px;
 border-left: solid 4px #cccccc;
 }
@@ -205,10 +210,19 @@ background-color: #e75111;
 border: none;
 color: #ffffff;
 display: inline;
-margin-bottom: 25px;
+margin: 5px 0px 25px 0px;
 padding: 10px;
 outline: none;
 width: 100%;
+}
+
+.b
+{
+background-color : #eeeeee;
+font-weight: bold;
+font-variant: small-caps;
+padding: 0px 5px 1px 5px;
+margin-left: 10px;
 }
 
 select
@@ -227,9 +241,10 @@ margin: 0px 10px 0px 0px;
 
 .ucbl
 {
+display: inline-block;
 float: right;
 margin-right: 100px;
-width: 25%;
+width: 200px;
 }
 
 /* CONNEXION */
@@ -280,19 +295,13 @@ padding: 0px 5px;
 
 footer
 {
-background-color: #333333;
+background-color: #ffffff;
 border-top: solid 4px #e75111;
 bottom: 0px;
-color: white;
-font-size: 8pt;
-height: 50px; /*taille du footer identique à celui de la section*/
+font-size: 9pt;
+height: 50px;
 padding-top: 15px;
 position: absolute;
 text-align: center;
 width: 100%;
-}
-
-footer a
-{
-color: #ffffff;
 }
